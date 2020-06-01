@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="408.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="390.0" prefWidth="650.0">
+         <children>
+            <Button layoutX="15.0" layoutY="394.0" mnemonicParsing="false" onAction="#saveBookClicked" prefHeight="43.0" prefWidth="94.0" text="Save" />
+            <Label alignment="CENTER" layoutX="46.0" layoutY="65.0" prefHeight="21.0" prefWidth="114.0" text="Summary:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="68.0" layoutY="15.0" prefHeight="21.0" prefWidth="108.0" text="Title: " textAlignment="CENTER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="76.0" layoutY="129.0" prefHeight="21.0" prefWidth="94.0" text="ISBN:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ISBN" layoutX="184.0" layoutY="126.0" prefHeight="31.0" prefWidth="335.0" />
+            <TextField fx:id="YearPublished" layoutX="184.0" layoutY="160.0" prefHeight="31.0" prefWidth="337.0" />
+            <TextField fx:id="Title" layoutX="183.0" layoutY="12.0" prefHeight="31.0" prefWidth="336.0" />
+            <Label alignment="CENTER" layoutX="15.0" layoutY="163.0" prefHeight="11.0" prefWidth="138.0" text="Year Published:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="Summary" layoutX="183.0" layoutY="43.0" prefHeight="83.0" prefWidth="336.0" />
+            <Label alignment="CENTER" layoutX="46.0" layoutY="197.0" prefHeight="21.0" prefWidth="121.0" text="Publisher:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="pubCombo" layoutX="184.0" layoutY="194.0" prefHeight="31.0" prefWidth="336.0" />
+            <Button layoutX="129.0" layoutY="394.0" mnemonicParsing="false" onAction="#auditTrailViewClicked" prefHeight="43.0" prefWidth="108.0" text="AuditTrail" />
+            <ComboBox fx:id="addAuthor" layoutX="8.0" layoutY="232.0" prefHeight="31.0" prefWidth="229.0" promptText="                Author" />
+            <TableView fx:id="tableView" layoutX="237.0" layoutY="232.0" prefHeight="211.0" prefWidth="397.0">
+               <columns>
+                  <TableColumn prefWidth="300.0" text="Author" />
+                  <TableColumn minWidth="0.0" prefWidth="96.0" text="Royalty" />
+               </columns>
+            </TableView>
+            <Button fx:id="deleteAuthor" layoutX="84.0" layoutY="351.0" mnemonicParsing="false" onAction="#onDeleteAuthorClicked" prefHeight="43.0" prefWidth="76.0" text="Delete " />
+            <Button fx:id="confirmAddAuthor" layoutX="160.0" layoutY="351.0" mnemonicParsing="false" onAction="#onAddAuthorClicked" prefHeight="43.0" prefWidth="70.0" text="Add" />
+            <TextField fx:id="setRoyalty" layoutX="15.0" layoutY="351.0" maxWidth="100.0" minWidth="65.0" prefHeight="43.0" prefWidth="70.0" promptText="Royalty" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="rootPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuController">
+   <top>
+      <VBox prefHeight="15.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="menuExit" mnemonicParsing="false" onAction="#handleMenuAction" text="Quit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <MenuItem fx:id="bookList" mnemonicParsing="false" onAction="#handleMenuAction" text="Book List" />
+                        <MenuItem fx:id="addBook" mnemonicParsing="false" onAction="#handleMenuAction" text="Add Book" />
+                        <MenuItem fx:id="authorList" mnemonicParsing="false" onAction="#handleMenuAction" text="Author List" />
+                        <MenuItem fx:id="addAuthor" mnemonicParsing="false" onAction="#handleMenuAction" text="Add Author" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

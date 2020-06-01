@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="bookList" layoutY="46.0" onMouseClicked="#switchToBookDetailView" prefHeight="356.0" prefWidth="600.0" />
+      <Button layoutX="509.0" layoutY="423.0" mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="43.0" prefWidth="69.0" text="Delete" />
+      <TextField fx:id="searchTitle" onAction="#onAction" prefHeight="50.0" prefWidth="467.0" />
+      <Button fx:id="searchButton" layoutX="467.0" mnemonicParsing="false" onAction="#onSearchClick" prefHeight="50.0" prefWidth="133.0" text="Search" />
+      <Button fx:id="firstPage" layoutX="210.0" layoutY="426.0" minWidth="34.0" mnemonicParsing="false" onAction="#onFirstPageClicked" prefHeight="37.0" prefWidth="69.0" text="First" translateX="-170.0" />
+      <Button fx:id="prevPage" layoutX="303.0" layoutY="426.0" mnemonicParsing="false" onAction="#onPrevPageClicked" prefHeight="37.0" prefWidth="76.0" text="Previous" translateX="-170.0" />
+      <Button fx:id="nextPage" layoutX="395.0" layoutY="426.0" mnemonicParsing="false" onAction="#onNextPageClicked" prefHeight="37.0" prefWidth="69.0" text="Next" translateX="-170.0" />
+      <Button fx:id="lastPage" layoutX="483.0" layoutY="426.0" mnemonicParsing="false" onAction="#onLastPageClicked" prefHeight="37.0" prefWidth="69.0" text="Last" translateX="-170.0" />
+      <Label fx:id="entryNumber" alignment="CENTER" layoutX="56.0" layoutY="402.0" prefHeight="21.0" prefWidth="477.0" textAlignment="CENTER" wrapText="true" />
+   
+   </children>
+</AnchorPane>
